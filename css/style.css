@@ -2,14 +2,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
 }
 
 /************************************************
 * Selettori TAG
 ************************************************/
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    
   }
   
   header {
@@ -21,36 +22,82 @@ body {
   footer {
   }
   
+  .nav-section a{
+      list-style: none;
+      text-decoration: none;
+      color: #878787;
+      font-weight: bolder;
+  }
+
+  .nav-section ul{
+      text-align: center;
+  }
+
+  .nav-section li{
+      padding: 30px 20px;
+      display: inline-block;
+  }
+
+
   /************************************************
   * Classi layout
   ************************************************/
+  .container{
+      width: 100%;
+      height: 100vh;
+  }
+  
   .main-container {
-    max-width: 920px;
     width: 100%;
-
-    margin: auto;
-    height: calc(100vh - 64px);
+    height: calc(100% - 64px);
     display: flex;
   }
   
   .side-block{
-      width: 20%;
-      height: calc(100vh - 64px);
-
-      background-color: rgb(219, 252, 74);
+      flex: 0 0 50px;
+      background-color: rgb(0, 0, 0);
 
   }
 
-  .central-block{
-      width: 80%;
-      background-color: burlywood;
-      height: calc(100vh - 64px);
-  }
-  
-  .bottom-block{
+  /*CENTRAL*/
+
+.central-block{
+    flex: 1 1 auto;
+    background-color: #141922;
+}
+    
+.upgrade-section{
+    background-color: #00000075;
+    width: 100%;
+    padding: 30px 20px;
+    text-align: right;
+}
+
+.upgrade-section button{
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: #00000075;
+    padding: 10px 30px;
+    /*hover verde quando premuto?*/
+}
+
+.nav-section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+    /*BOTTOM*/
+
+.footer-container{
+    width: 100%;
     height: 64px;
-    background-color: #282828;
-  }
+}
+
+.bottom-block{
+height: 100%;
+background-color: #282828;
+}
   /************************************************
   * Classi Utilities
   ************************************************/
@@ -59,3 +106,4 @@ body {
     display: table;
     clear: both;
   }
+
