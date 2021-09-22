@@ -27,8 +27,11 @@ body {
   .main-container {
     max-width: 920px;
     width: 100%;
-    margin: auto
+    margin: auto;
+    position: flex;
   }
+  
+  
   
   .bottom-block{
     height: 64px;
