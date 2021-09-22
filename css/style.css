@@ -27,11 +27,25 @@ body {
   .main-container {
     max-width: 920px;
     width: 100%;
+
     margin: auto;
-    position: flex;
+    height: calc(100vh - 64px);
+    display: flex;
   }
   
-  
+  .side-block{
+      width: 20%;
+      height: calc(100vh - 64px);
+
+      background-color: rgb(219, 252, 74);
+
+  }
+
+  .central-block{
+      width: 80%;
+      background-color: burlywood;
+      height: calc(100vh - 64px);
+  }
   
   .bottom-block{
     height: 64px;
