@@ -8,13 +8,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Spotify</title>
 </head>
 
 <body>
     <div class="container">
         <main class="main-container">
-            <div class="side-block"></div>
+            <div class="side-block">
+                <div class="side-block-top">
+                    <div class="logo">
+                        <img src="img/logo-small.svg" alt="logo/small/spotify">
+                    </div>
+                    <div class="logo">
+                        <img src="img/home.svg" alt="logo/home/spotify">
+                    </div>
+                    <div class="logo">
+                        <img src="img/search.svg" alt="logo/search/spotify">
+                    </div>
+                    <div class="logo">
+                        <img src="img/libreria.svg" alt="logo/libreria/spotify">
+                    </div>
+                </div>
+                <div class="side-block-middle">
+                    <div class="hide-on-mobile white">
+                        <h3>PLAYLIST</h3>
+                        <a href="#">Crea Playlist</a>
+                        <ul>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="side-block-bottom">
+                    <div class="logo">
+                        <img src="img/download.svg" alt="logo/download/spotify">
+                    </div>
+                    <div class="logo profile-img"> <!--Mettere un altro div davanti all'immagine con centro trasparente?-->
+                        <img src="img/profile.svg" alt="logo/profile/spotify">
+                    </div>
+                </div>
+            </div>
             <div class="central-block">
                 <div class="upgrade-section">
                     <button>EFFETTUA L'UPGRADE</button>
@@ -29,12 +66,29 @@
                         <li><a href="#">SCOPRI</a></li>
                     </ul>
                 </div>
-                <div class="content-section"></div>
+                <div class="content-section">
+                    Nome Playlist
+                </div>
 
             </div>
         </main>
         <footer class="footer-container">
-            <div class="bottom-block"></div>
+            <div class="bottom-block">
+                <div class="bottom-block-sx">
+                    <div class="img-play">
+                        <!-- <img src="img/sinister.jpeg" alt="sinister-play"> -->
+                    </div>
+                    <div class="bottom-block-sub-central">
+                        <h5 class="white">Sinister</h5>
+                        <h6 class="grey">Brano</h6>
+                        <h6 class="grey"">Nome</h6>
+                    </div>
+                    <i class="far fa-heart white"></i>
+                    <i class="far fa-folder white"></i>
+                </div>
+                <div class="bottom-block-cx"></div>
+                <div class="bottom-block-dx"></div>
+            </div>
         </footer>
     </div>
 </body>
