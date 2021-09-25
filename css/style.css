@@ -138,9 +138,13 @@ body {
     align-items: center;
     z-index: 99;
 }
-.bottom-block-sx, .bottom-block-dx {
-    flex-grow: 1;  
+
+.bottom-block-sx-container{
+    padding-right: 5px;
 }
+/*.bottom-block-sx, .bottom-block-dx {
+    flex-grow: 1;  
+}*/
 /*left*/
 
 
@@ -151,9 +155,9 @@ body {
     
 }
 
-.bottom-block-sub-central{
+.bottom-block-sub-central, .bottom-block-cx{
     height: 100%;
-    padding-right: 30px;
+    padding-right: 5px;
 
 }
 
@@ -169,11 +173,11 @@ body {
 .icons {
     display: inline-block;
     padding-left: 0px;
-    padding-right: 20px;
+    padding-right: 0px;
 }
 
-.icons i{
-    padding-right: 10px;
+.icons i {
+    padding-right: 5px;
 }
 
 .img-play img{
@@ -183,15 +187,15 @@ body {
 }
 /*center*/
 .bottom-block-cx{
-    flex-grow: 4;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .play-buttons i{
     font-size: 15px;
-    padding: 0px 10px;
+    padding: 0px 5px;
 }
 
 .play-buttons i:nth-child(3) {
@@ -211,7 +215,7 @@ font-size: 25px;
 }
 
 .status-bar{
-    width: 200px;
+    width: 150px;
     height: 5px;
     border-radius: 3px;
     background-color: grey;
@@ -221,6 +225,27 @@ font-size: 25px;
     font-size: 10px;
     font-weight: bold;
 }
+
+/*bottom right*/
+.bottom-block-dx div{
+    display: inline-block;
+
+}
+
+.bottom-block-dx i:nth-child(3) {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.volume-bar{
+    width: 80px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: grey;
+    margin-right: 5px;
+}
+
+
 /*media query*/
 /*@media screen and (min-width: 720px) {
     .side-block{
